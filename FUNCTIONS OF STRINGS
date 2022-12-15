@@ -1,0 +1,8 @@
+a="welcome to python"
+print(a.capitalize())
+print(a.upper())
+print(a.lower())
+print(a.title())
+print(a.swapcase())
+print(a.count(a))
+print(a.join(a))
