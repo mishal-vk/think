@@ -1,0 +1,31 @@
+c=int(input("c: "))
+n=c
+dig=0
+while c>0:
+    c//=10
+    dig+=1
+print(dig)
+if dig ==3:
+    if 100<=n<=300:
+        if n%2==0:
+            print(n,' is even')
+        else:
+            print(n,'is odd')
+    elif 301<=n<=500:
+        fact=1
+        for i in range(1,n+1):
+            fact*=i
+        print('factorial of ',n,'is',fact)
+    elif 501<=n<=700:
+        if n%13==0:
+            print('number is multiple of 13')
+        else:
+            print('number is not multiple of 13')
+    else:
+        for i in range(2,n//2):
+            if n%i==0:
+                print('number is not prime')
+            else:
+                print('number is prime')
+else:
+    print('invalid number')
