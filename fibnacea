@@ -1,0 +1,23 @@
+def fibonacci():
+    start = 1
+    second = 2
+    third = 0
+    print(start,second,end=' ')
+    for i in range(2,5):
+        third = start+second
+        start,second = second,third
+        print(third,end=' ')
+
+def reverse(n):
+    if n%5==0:
+        fibonacci()
+        print('\n')
+        c = n
+        nn = 0
+        while n>0:
+            rem = n%10
+            n//=10
+            nn=nn*10+rem
+            print('Reverse:',nn)
+n = int(input('Input number:'))
+reverse(n)
